@@ -3,6 +3,7 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 input[type="time"],
+input[type="submit"],
 select,
 button,
 label,
@@ -37,6 +38,7 @@ textarea{
     input[type="password"],
     select,input[type="date"],
     input[type="time"],
+    input[type="submit"],
     button,
     textarea{
         width: 100%;
@@ -76,10 +78,10 @@ button{
     vertical-align: top;
     *padding-top: 2px;
     *padding-bottom: 0;
-    background-color: @grey4;
-    border: solid 1px @grey4;
+    background-color: @highlight;
+    border: solid 1px @highlight;
     &:hover,&.active{
-        background-color: @grey3;
+        background-color: @highlightHover;
         color:white!important;
     }
 }

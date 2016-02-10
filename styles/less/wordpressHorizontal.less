@@ -1,0 +1,81 @@
+
+
+
+
+#main-nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    height: 2*@leading;
+    box-shadow: @boxShadow; 
+    ul{
+        width: 100%;
+        .clearfix();
+        margin-top: 0;
+        top:0;
+        position: absolute;
+        li{
+            width: auto;
+            
+            float:left;
+            a {
+                padding: 0 @leading;
+                height: 2*@leading;
+                line-height: 2*@leading;
+                background-color: @highlight;
+                color: lighten(@highlight, 20%);
+                display: block;
+                &:hover{
+                    color: @white;
+                    background-color: @highlightHover;
+                }
+            }
+            &.current-menu-item{
+                a{
+                    color: @white;
+                    background-color: @highlightHover;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 1040px) {
+  #main-nav{
+      background-color: @background;
+      z-index: 200;
+      margin-top: 2*@leading;
+      ul{
+          li{
+              width: 100%;
+              a{
+              }
+          }
+      }
+  }
+}
+
+.menu-trigger-container{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    height: 2*@leading;
+    a {
+        padding: 0 @leading;
+        width: 100%;
+        height: 2*@leading;
+        line-height: 2*@leading;
+        background-color: @highlight;
+        color: lighten(@highlight, 20%);
+        display: block;
+        &:hover{
+            color: @white;
+            background-color: @highlightHover;
+        }
+    }
+}

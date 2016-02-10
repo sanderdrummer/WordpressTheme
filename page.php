@@ -5,8 +5,8 @@
  */
 
 get_header(); // This fxn gets the header.php file and renders it ?>
-	<div id="primary" class="row-fluid">
-		<div id="content" role="main" class="span8 offset2">
+	<div id="primary" class="">
+		<div id="content" role="main" class="m-t-5">
 
 			<?php if ( have_posts() ) : 
 			// Do we have any posts/pages in the databse that match our query?
@@ -16,9 +16,11 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 				// If we have a page to show, start a loop that will display it
 				?>
 
-					<article class="post">
-					
-						<h1 class="title"><?php the_title(); // Display the title of the page ?></h1>
+					<article class="post m-t-2 m-b-2 box">
+						
+						<div class="underline">
+							<h2 class="hug highlight"><?php the_title(); // Display the title of the page ?></h2>
+						</div>	
 						
 						<div class="the-content">
 							<?php the_content(); 

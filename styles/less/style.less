@@ -1,0 +1,31 @@
+@import 'reset.less';
+@import 'variables.less';
+@import 'typo.less';
+@import 'grid.less';
+@import 'forms.less';
+@import 'gallery.less';
+@import 'components.less';
+@import 'navs.less';
+@import 'wordpressHorizontal.less';
+
+
+body{
+    background-color: @bg; 
+}
+
+.box{
+    padding: @leading;
+    background-color: @white; 
+    box-shadow: @boxShadow;
+}
+
+@media only screen and (max-width: 1040px) {
+    body{
+        background-color: @white;
+    }
+    .box{
+        padding: 0px;
+        background-color: @white;
+        box-shadow: none;
+    }
+}

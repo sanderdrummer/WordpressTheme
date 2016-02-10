@@ -7,7 +7,7 @@
 
 </div><!-- / end page container, begun in the header -->
 
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer m-t-5 m-b-5" role="contentinfo">
 	<div class="site-info container">
 
 		
